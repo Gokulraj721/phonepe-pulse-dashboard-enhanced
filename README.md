@@ -1,62 +1,77 @@
-markdown
-# 📊 PhonePe Pulse Dashboard Enhanced
+**📊 PhonePe Pulse Dashboard — Enhanced Version**
 
-This enhanced dashboard transforms static PhonePe Pulse data into a dynamic, user-friendly interface for intuitive exploration and actionable insights. Built with Streamlit and powered by Plotly, Pandas, and SQL, it enables real-time transaction analysis with seamless navigation and synced filters.
+An interactive, data-driven dashboard built with Streamlit, Pandas, Plotly, and SQL to explore and visualize digital payment trends across India using the public PhonePe Pulse dataset.
 
-## 🌐 Live Dashboard
-http://localhost:8505/
+This enhanced version transforms the static PhonePe Pulse data into a dynamic, user-friendly interface for:
 
----
+Real-time transaction analysis
 
-## 🚀 Getting Started
+State-wise & national-level insights
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Gokulraj721/phonepe-pulse-dashboard-enhanced.git
-Navigate to the project folder
+Category-wise breakdowns with interactive filters
 
-bash
-cd phonepe-pulse-dashboard-enhanced/output
-Run the Streamlit app
+🚀 Features
+Dual filters — switch between Year and State instantly
 
-**bash**
-python -m streamlit run app.py
+**Three dashboard views:**
 
-**📂 Folder Structure**
+Data Highlights — Overall trends, category-wise distribution, and yearly changes
 
-pulse/        # JSON to CSV conversion scripts and raw data
-output/
-├── app.py    # Streamlit dashboard script
-├── charts/   # Visual outputs (optional)
-├── data/     # Intermediate CSV files (optional)
+Transactions — Category drill-down with quarterly trends
 
-**🔧 Tech Stack**
+State-Level Insights — Interactive India map with highlighted state
+
+Dynamic visualizations using Plotly
+
+Clean, responsive UI optimized for usability and aesthetics
+
+📂 Folder Structure
+
+ ┣ 📂 output/                 # Processed CSV data files
+ ┣ 📂 pulse/                  # JSON → CSV conversion scripts & raw data
+ ┣ 📜 app.py                  # Streamlit dashboard script
+ ┣ 📜 map_hover_transactions.csv
+ ┣ 📜 transaction_categories.csv
+ ┣ 📜 user_metrics.csv
+ ┗ 📜 README.md
+ 
+🛠️ Tech Stack
 Python
 
-Streamlit
+Streamlit — interactive web UI
 
-Plotly & Seaborn
+Pandas — data processing
 
-Pandas
+Plotly & Seaborn — data visualization
 
-SQL
+SQL — data querying
 
-**✨ Features**
-🔄 Dual filters for year and state
+Requests — fetching live GeoJSON map data
 
-🌐 State-level and national transaction insights
+⚙️ Getting Started
+1️⃣ Clone the Repository
+bash 
+git clone https://github.com/Gokulraj721/phonepe-pulse-dashboard-enhanced.git
 
-📊 Real-time visualizations with synced tabs
+2️⃣ Navigate to Project Folder
+bash
+cd phonepe-pulse-dashboard-enhanced/output
 
-🎨 Clean layout optimized for usability and aesthetics
+3️⃣ Run the Streamlit App
+bash
+bash python -m streamlit run app.py
 
-**📷 Preview**
-<img width="1754" height="1013" alt="image" src="https://github.com/user-attachments/assets/79d5e478-7e0b-403e-ba29-2e8d8c52c42f" />
+Note: The dashboard runs locally by default at http://localhost:8505.
+
+📈 Preview
+<img width="1815" height="1087" alt="image" src="https://github.com/user-attachments/assets/545eeb69-159c-4751-8107-5c635c5acafe" />
 
 
-**📬 Contact**
-For feedback, collaboration, or questions:
+💡 Insights from the Dashboard
+Peer-to-peer payments dominate transaction volumes nationwide.
 
-GitHub: Gokulraj721
+Certain states show high transaction volumes but low unique user counts — ideal targets for marketing and user growth.
 
-Email: gokulkarupaya@gmail.com 
+Recharge & bill payments are steady but slower-growing, suggesting market maturity.
+
+Festive season spikes are consistent across years — valuable for campaign planning.
